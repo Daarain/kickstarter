@@ -1,113 +1,289 @@
-.sign-upbutton {
-  background-color: #fe2ed8;  /* Bootstrap's "purple" */
-  color: white;
-  border: none;
-}
-
-.sign-upbutton:hover {
-  background-color: #5a32a3;  /* darker violet on hover */
-  color: #fff;
-}
-
-.landingpagebody{
-    background:linear-gradient(135deg, #ff4ecd, #a855f7);
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    
-}
-
-.landingpagebodygrid{
-  
-    width: 70vw;
-    height: 80vh;
-    display: flex;
-  flex-direction: column;
-    /* background-color: yellow; */
-   align-self: center;
-   align-items: center;
-   justify-content: space-evenly;
-   
-}
-
-.Launch{
-color: white;
-  background:linear-gradient(135deg, #ff4ecd, #a855f7);
-
-border-style: groove;
-border-color:transparent;
-border-radius: 17px;
-
-height: 4vh;
-width: 18vw;
-justify-content: center;
+/*navbar styling*/
+.navbar{
+width: 100vw;
+height: 9vh;
+/* background-color: black; */
+display: flex;
+flex-direction: row;
 align-items: center;
-text-align: center;
-
+justify-content: space-around;
+color: black;
+border-bottom: 2px solid #eaeaea; /* Example */
 
 }
 
-.Fund{
-  /* background-color: red; */
-  /* height: 20vh; */
-  color: white;
-  font-size: 10vh;
-  font-weight: bold;
-  text-align: center;
+.logo{
+display: flex;
+flex-direction: row;
+color: rgb(56, 1, 159);
+/* background-color: rebeccapurple; */
+font-size: large;
+font-weight: 900;
 }
 
-.Vision{
-  /* background-color: red; */
-  width: 45vw;
-font-size: 3vh;
-text-align: center;
-  color:rgb(243, 243, 243);
-}
-
-.buttons{
+.webpages{
 width: 30vw;
-height: 10vh;
-  /* background-color: red; */
+/* background-color: red; */
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.links{
+    outline:  none ;
+    background-color: transparent;
+    border-color: transparent;
+    color: grey;
+    font-weight:400;
+    font-size: 2.1vh;
+}
+
+.links:hover{
+    color: black ;
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: 700;
+  }
+
+
+.searchfield{
+height: 4vh;
+width: 17vw;
+      display: flex;
   align-items: center;
-   display: flex;
-   flex-direction: row;
-  justify-content: space-evenly;
+  background: #f8f8fa;
+  border-radius: 20px;
+  padding: 8px 16px;
+  
+}
+.searchfield input[type="search"]{
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #888ca0;
+  width: 100%;
+  padding-left: 8px;
 }
 
-.button1{
-height: 10vh;
-width: 12vw;
-background-color:#ff4ecd;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: bold;
-text-align: center;
-color: white;
-border: transparent;
-border-radius: 15px;
-font-size: large;
-box-shadow: 0 8px 8px rgba(78, 17, 104, 0.15)
+.searchfeild input::placeholder {
+  color: #888ca0;
+  opacity: 1;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
 }
 
-.button2{
-height: 10vh;
-width: 12vw;
-text-align: center;
-font-size: large;
+.loginbuttons{
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
 
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
+    width: 16vw;
+    justify-content: space-between;
+}
+
+.login{
+background-color: transparent;
+color: grey;
 border-color: transparent;
-background-color:#5a32a3;
-border: transparent;
-border-radius: 15px;
+width: 8vw;
+font-weight: 600;
+border-radius: 2vw;
+}
+.login:hover{
+background-color:  transparent;
+border-radius: 2vw;
+color: black;
+border-color: transparent ;
+width: 8vw;
+}
+
+.register{
+background-color: rgb(85, 4, 233);
+
+border-color: transparent;
+border-radius: 0.6vw;
+width: 8vw;
+}
+.register:hover{
+background-color:  rgb(56, 1, 159);
+border-radius: 2vw;
+
+}
+
+/*homepage styling starts from here*/
+.ParentScaffold{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  /* background-color: d; */
+}
+
+
+
+
+
+.showcasegrid{
+height: 90vh;
+width: 100vw;
+/* background-color: grey; */
+display: flex;
+flex-direction: row;
+
+}
+
+.Verticalgrid{
+height: 90vh;
+width: 50vw;
+display: flex;
+/* background-color: pink; */
+flex-direction: column;
+align-items: start;
+justify-content: center;
+  padding: 10px 2vw 20px 4vw;
+}
+.Verticalgrid2{
+  overflow: hidden;
+  
+  max-width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.Verticalgrid2 img{
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+
+
+.Paragraph1{
+  /* background-color: greenyellow; */
+  font-size: 7.5vh;
+  font-weight: 800;
+  height: 37vh;
+  
+}
+
+.Paragraph2{
+color: rgb(82, 82, 82);
+font-size: 3vh;
+height: 18vh;
+/* background-color: rebeccapurple; */
+align-items: center;
+}
+
+
+.Buttons{
+  /* background-color: red; */
+  width: 27vw;
+  height: 7vh;
+    display: flex;
+  flex-direction:row ;
+  align-items: center;
+  justify-content:space-between;
+
+}
+
+.login2{
+background-color: rgb(85, 4, 233);
+width: 15vw;
+/* text-align: ; */
+height: 6vh;
+font-size: larger;
 font-weight: bold;
-box-shadow: 0 8px 24px rgba(78, 17, 104, 0.15)
+border-radius: 2vh;
+
+}
+
+.login2:hover{
+background-color: rgb(56, 1, 159);
+border-radius: 2vh;
+
+}
+
+
+.register2{
+background-color: transparent ;
+color: gray;
+/* border-color: transparent; */
+border-radius: 2vh;
+width: 10vw;
+height: 6vh;
+font-size: larger;
+font-weight: bold;
+}
+
+.register2:hover{
+background-color: transparent;
+color: black;
+border-radius: 3vh;
+
+}
+
+.Horizontalgrid{
+  width: 100vw;
+  height: 70vh;
+background: linear-gradient(90deg, #5a5fea 0%, #5e4dd5 50%, #5b35bf 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.join{
+  /* background-color:pink; */
+  height: 10vh;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  font-size: 5vh;
+  font-weight: 700;
+  
+
+}
+
+
+.Connect{
+/* background-color: gray;   */
+height: 10vh;
+width: 100vw;
+text-align: center;
+color: white;
+font-size: 3vh;
+
+}
+
+
+
+.Stats{
+  display: flex;
+  flex-direction: row;
+  background-color: palegreen;
+  height: 30vh;
+  width: 100vw;
+  align-items: center;
+justify-content:space-evenly;
+}
+
+.data{
+
+  height: 20vh;
+  width: 20vw;
+display: flex;
+flex-direction: column;
+background-color: red;
+align-items: center;
+text-align: center;
+
 }
 
 

@@ -5,7 +5,7 @@ import homepage from './components/homepage';
 import { Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
-import Landingpagenavbar from './components/Navbar'
+import Navbar from './components/Navbar'
 import Landingpage from './components/landingpage'
 import app from './app.css'
 function App() {

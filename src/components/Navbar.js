@@ -1,36 +1,42 @@
-import React from "react";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+// import React ,{useState}from "react";
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button'
 import '../app.css'
 
-function Landingpagenavbar(){
-  return (
-    <>
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container className="justify-content-end" >
-          <Navbar.Brand href="#home">KickStarter</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Discover </Nav.Link>
-            <Nav.Link href="#pricing">Start a project </Nav.Link>
-
-
-          </Nav>
-          <Nav className="ms-auto">
-   <Button variant="outline-light" href="#login" className="me-2">
-              Login
-            </Button>
-            <Button variant="light" href="#signup" className="sign-upbutton">
-              Signup
-            </Button>
-            </Nav>
-        </Container>
-      </Navbar>
-    </>
-  );
+function Navbar(){
+return(
+  <div className="navbar">
+    <div className="logo">
+      <div className="KickStarter">KickStarter</div>
+    </div>
+    <div className="webpages">
+  <Button className="links">Home </Button>
+  <Button className="links">Project</Button>
+  <Button className="links">Professional</Button>
+  <Button className="links">Companies</Button>
+    </div>
+    <div className="searchfield">
+  <svg
+        width="20"
+        height="20"
+        fill="#888ca0"
+        style={{ flexShrink: 0, marginRight: '8px' }}
+        viewBox="0 0 24 24"
+      >
+        <circle cx="11" cy="11" r="8" stroke="#888ca0" strokeWidth="2" fill="none"/>
+        <line x1="21" y1="21" x2="16.6" y2="16.6" stroke="#888ca0" strokeWidth="2"/>
+      </svg>
+      <input type="search" placeholder="search"></input>
+      </div>
+    <div className="loginbuttons">
+     <Button className='login'>Login</Button>
+   <Button className='register'>Register</Button>
+    </div>
+  </div>
+)
 
 }
 
-export default Landingpagenavbar
+export default Navbar
